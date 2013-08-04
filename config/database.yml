@@ -54,7 +54,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: TestRails_production
-  pool: 5
-  username: TestRails
-  password:
+  host: ENV['DB_HOST']
+  database: ENV['DB_NAME']
+  username: ENV['DB_USER']
+  port: ENV['DB_PORT']
+  password: ENV['DB_PASS']
