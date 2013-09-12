@@ -1,16 +1,15 @@
 TestRails::Application.routes.draw do
   devise_for :users
+
   resources :sides
-
   resources :categories
-
   resources :courses
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcomes#index'
+  root 'courses#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
