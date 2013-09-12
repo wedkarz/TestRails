@@ -16,9 +16,9 @@
     </data-source>
     <data-source source="LOCAL" name="Rails TestRails: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="6e6a3ee0-c79b-42f7-be2d-470be1e34cf0">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ENV['DB_HOST']:ENV['DB_PORT']/ENV['DB_NAME']</jdbc-url>
-      <user-name>ENV['DB_USER']</user-name>
-      <user-password>dfefdfe4dffcdff1df8ddfeedfe8dff5dffadfebdff9dff9df8ddff7</user-password>
+      <jdbc-url>jdbc:postgresql://ec2-107-20-165-44.compute-1.amazonaws.com:5432/di6onbma9cvfc</jdbc-url>
+      <user-name>qudpvwqslraoqq</user-name>
+      <user-password>df9fdffcdfcfdfc2dfdddfeedfd9dfe4dfe9df93dfe9df98dfeddf98dfdfdffddfe9dfdfdfeddfe1dfcedfcbdfdedfefdfccdfe7</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

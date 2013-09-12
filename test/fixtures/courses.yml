@@ -1,0 +1,36 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mielony:
+  name: Kotlet mielony
+  price: 11.0
+  weight: 150
+  description: Kotlet mielony wieprzowy
+  image_url: http://www.bar.gda.pl/prod/menu/large/kotlet_mielony_127.jpg
+
+pożarski:
+  name: Kotlet pożarski
+  price: 12.0
+  weight: 150
+  description: Kotlet mielony z piersi kurczaka
+  image_url: http://www.bar.gda.pl/prod/menu/large/kotlet_pozarski_85.jpg
+
+kurczak_w_potrawce:
+  name: Kurczak w potrawce
+  price: 12.0
+  weight: 200
+  description: Udko z kurczaka w białym sosie potrawkowym
+  image_url: http://www.bar.gda.pl/prod/menu/large/kotlet_pozarski_85.jpg
+
+klopsik_gotowany_w_sosie:
+  name: Klopsik gotowany w sosie
+  price: 12.0
+  weight: 120
+  description: Klopsiki gotowane z mielonej piersi kurczaka w sosie koperkowym,
+  image_url: http://www.bar.gda.pl/images/menuNoImg.gif
+
+danie_dla_dzieci:
+  name: Danie dla dzieci
+  price: 11.0
+  weight: 120
+  description: Kotleciki drobiowe
+  image_url: http://www.bar.gda.pl/prod/menu/large/danie_dla_dzieci_88.jpg

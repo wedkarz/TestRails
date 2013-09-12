@@ -1,0 +1,29 @@
+<h1>Listing sides</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sides.each do |side| %>
+      <tr>
+        <td><%= side.name %></td>
+        <td><%= side.type %></td>
+        <td><%= link_to 'Show', side %></td>
+        <td><%= link_to 'Edit', edit_side_path(side) %></td>
+        <td><%= link_to 'Destroy', side, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Side', new_side_path %>

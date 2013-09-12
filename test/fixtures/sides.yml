@@ -1,0 +1,34 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+ziemniaki:
+  name: ziemniaki
+  type: potatoes_or_chips
+
+frytki:
+  name: frytki
+  type: potatoes_or_chips
+
+marchewka_z_groszkiem:
+  name: marchewka z groszkiem
+  type: hot_wedge
+
+buraczki_zasmażane:
+  name: buraczki zasmażane
+  type: hot_wedge
+
+fasolka_szparagowa:
+  name: fasolka szparagowa
+  type: hot_wedge
+
+marchewka:
+  name: marchewka
+  type: salad
+
+seler:
+  name: seler
+  type: salad
+
+kapustka_pekińska:
+  name: kapustka pekińska
+  type: salad
+

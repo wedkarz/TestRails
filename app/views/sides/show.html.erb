@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @side.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @side.type %>
+</p>
+
+<%= link_to 'Edit', edit_side_path(@side) %> |
+<%= link_to 'Back', sides_path %>
