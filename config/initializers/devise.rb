@@ -2,8 +2,8 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   # ==> LDAP Configuration 
-  # config.ldap_logger = true
-   config.ldap_create_user = false
+  config.ldap_logger = true
+  config.ldap_create_user = false
   # config.ldap_update_password = true
   # config.ldap_config = "#{Rails.root}/config/ldap.yml"
   # config.ldap_check_group_membership = false
@@ -20,7 +20,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'artur.rybak@ihs.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -226,7 +226,7 @@ Devise.setup do |config|
 
   # ==> Navigation configuration
   # Lists the formats that should be treated as navigational. Formats like
-  # :html, should redirect to the sign in page when the user does not have
+  # :html, should redirect to the sign in page when the user does not have                           s
   # access, but formats like :xml or :json, should return 401.
   #
   # If you have any extra navigational formats, like :iphone or :mobile, you
@@ -241,10 +241,11 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :github, '3cead8de0072008e0137', '180cb0a1cd658455fa19b01c2288f9df4ba88433', :scope => 'user,public_repo'
+  require "omniauth-github"
+  config.omniauth :github, '3cead8de0072008e0137', '180cb0a1cd658455fa19b01c2288f9df4ba88433'
 
   require "omniauth-facebook"
-  config.omniauth :facebook, "1409586929268759", "676c730e042ca016d3efc98f47aeccb4"
+  config.omniauth :facebook, "1409586929268759", "676c730e042ca016d3efc98f47aeccb4", :scope => ''
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
