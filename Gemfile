@@ -47,6 +47,7 @@ gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ld
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "omniauth-github"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
