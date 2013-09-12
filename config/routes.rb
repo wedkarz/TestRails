@@ -1,4 +1,5 @@
 TestRails::Application.routes.draw do
+  devise_for :users
   resources :sides
 
   resources :categories
