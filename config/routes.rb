@@ -11,8 +11,9 @@ TestRails::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'courses#index'
 
-  get '/users/auth/facebook' => 'users/omniauth_callbacks#passthru'
-  get '/users/auth/github' => 'users/omniauth_callbacks#passthru'
+  devise_scope :user do
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  end
 
 
   # Example of regular route:

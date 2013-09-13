@@ -22,7 +22,7 @@
     <file path="/user.rb" changelist="1571f0fa-f207-4526-9fb3-e1a2b512bb71" time="1379066943360" ignored="false" />
     <file path="/devise.rb" changelist="1571f0fa-f207-4526-9fb3-e1a2b512bb71" time="1379066251704" ignored="false" />
     <file path="/ldap.yml" changelist="1571f0fa-f207-4526-9fb3-e1a2b512bb71" time="1379028288269" ignored="false" />
-    <file path="/omniauth_callbacks_controller.rb" changelist="1571f0fa-f207-4526-9fb3-e1a2b512bb71" time="1379067157057" ignored="false" />
+    <file path="/omniauth_callbacks_controller.rb" changelist="1571f0fa-f207-4526-9fb3-e1a2b512bb71" time="1379069621140" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +47,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="579" selection-end="604" vertical-scroll-proportion="0.0">
+            <state line="25" column="24" selection-start="785" selection-end="785" vertical-scroll-proportion="0.49800798">
               <folding />
             </state>
           </provider>
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="0.27888447">
+            <state line="15" column="5" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,11 +127,11 @@
         <option value="$PROJECT_DIR$/app/controllers/Users/omniauth_callbacks.rb" />
         <option value="$PROJECT_DIR$/app/controllers/Users/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/Users/omniauth_callbacks_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
       </list>
     </option>
   </component>
@@ -857,13 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="579" selection-end="604" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="249" column="83" selection-start="12469" selection-end="12469" vertical-scroll-proportion="0.0">
@@ -873,7 +866,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="0.27888447">
+        <state line="15" column="5" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="785" selection-end="785" vertical-scroll-proportion="0.49800798">
           <folding />
         </state>
       </provider>

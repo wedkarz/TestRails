@@ -1,4 +1,10 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  def passthru
+    send(params[:provider]) if providers.include?(params[:provider])
+  end
+
+  protected
+
   def facebook
     # You need to implement the method below in your model (e.g. app/models/user.rb)
     @user = User.find_for_facebook_oauth(request.env["omniauth.auth"], current_user)
@@ -14,5 +20,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def github
 
+  end
+
+  def providers
+    ["facebook", "github"]
   end
 end
