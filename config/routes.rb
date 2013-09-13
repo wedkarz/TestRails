@@ -11,8 +11,8 @@ TestRails::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'courses#index'
 
-  match '/users/auth/facebook' => 'users/omniauth_callbacks#passthru'
-  match '/users/auth/github' => 'users/omniauth_callbacks#passthru'
+  get '/users/auth/facebook' => 'users/omniauth_callbacks#passthru'
+  get '/users/auth/github' => 'users/omniauth_callbacks#passthru'
 
 
   # Example of regular route:
