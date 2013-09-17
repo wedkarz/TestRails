@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130913101530) do
+ActiveRecord::Schema.define(version: 20130916175800) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,9 +32,48 @@ ActiveRecord::Schema.define(version: 20130913101530) do
     t.datetime "updated_at"
   end
 
+  create_table "meal_side_types", force: true do |t|
+    t.integer  "meal_id"
+    t.integer  "side_type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "meals", force: true do |t|
+    t.string   "name"
+    t.integer  "category_id"
+    t.integer  "course_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", force: true do |t|
+    t.string   "status"
+    t.integer  "user_id"
+    t.integer  "meal_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sessions", force: true do |t|
+    t.string   "session_id", null: false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], name: "index_sessions_on_session_id", using: :btree
+  add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at", using: :btree
+
+  create_table "side_types", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sides", force: true do |t|
     t.string   "name"
-    t.string   "type"
+    t.integer  "side_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

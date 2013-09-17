@@ -1,0 +1,13 @@
+
+
+mielony:
+  meal: mielony
+  side_type: potatoes_or_chips
+
+mielony2:
+  meal: mielony
+  side_type: hot_wedge
+
+mielony3:
+  meal: mielony
+  side_type: salad

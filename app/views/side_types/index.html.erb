@@ -1,0 +1,25 @@
+<h1>Listing side_types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @side_types.each do |side_type| %>
+      <tr>
+        <td><%= link_to 'Show', side_type %></td>
+        <td><%= link_to 'Edit', edit_side_type_path(side_type) %></td>
+        <td><%= link_to 'Destroy', side_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Side type', new_side_type_path %>

@@ -1,0 +1,6 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mielony:
+  name: Kotlet mielony
+  category: zestawy_obiadowe
+  course: mielony

@@ -41,6 +41,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'activerecord-session_store'
 gem 'devise'
 gem 'net-ldap'
 gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ldap_authenticatable.git"

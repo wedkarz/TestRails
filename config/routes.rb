@@ -1,4 +1,12 @@
 TestRails::Application.routes.draw do
+  resources :meal_side_types
+
+  resources :side_types
+
+  resources :orders
+
+  resources :meals
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   resources :sides
@@ -11,9 +19,9 @@ TestRails::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'courses#index'
 
-  devise_scope :user do
-    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
-  end
+  #devise_scope :user do
+  #  get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  #end
 
 
   # Example of regular route:

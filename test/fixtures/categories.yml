@@ -1,7 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
+zestawy_obiadowe:
+  name: zestawy obiadowe
 
-two:
-  name: MyString
+sprobuj:
+  name: spróbuj
+
+salatki:
+  name: sałatki
+
+pierogi:
+  name: pierogi
+
+zupy:
+  name: zupy
+
+nalesniki:
+  name: naleśniki
+
+napoje_zimne:
+  name: napoje zimne
+
+dodatki:
+  name: dodatki

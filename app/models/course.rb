@@ -1,4 +1,3 @@
 class Course < ActiveRecord::Base
-  has_many :sides
-  belongs_to :category
+  has_many :meals
 end
