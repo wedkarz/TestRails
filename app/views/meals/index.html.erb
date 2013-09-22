@@ -8,6 +8,8 @@
       <th>Weight</th>
       <th>Price</th>
       <th>Image</th>
+      <th>Side Types</th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -22,6 +24,11 @@
         <td><%= meal.course.weight %></td>
         <td><%= meal.course.price %></td>
         <td><%= image_tag(meal.course.image_url,  size: '150') %></td>
+        <td>
+          <table><% meal.side_types.each do |st| %>
+                <tr><td><%= st.name %></td></tr>
+          <% end %>
+        </table></td>
         <td><%= link_to 'Show', meal %></td>
         <td><%= link_to 'Edit', edit_meal_path(meal) %></td>
         <td><%= link_to 'Destroy', meal, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -25,6 +25,9 @@ class MealsController < ApplicationController
   # POST /meals.json
   def create
     @meal = Meal.new(meal_params)
+    side_type_ids = params[:meal][:side_types].reject! { |st| st.empty? }
+      side_types = SideType.find(side_type_ids)
+    @meal.side_types << side_types
 
     respond_to do |format|
       if @meal.save
@@ -62,13 +65,13 @@ class MealsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_meal
-      @meal = Meal.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_meal
+    @meal = Meal.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def meal_params
-      params.require(:meal).permit(:name)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def meal_params
+    params.require(:meal).permit(:name, :meal_side_types, :category_id, :course_id)
+  end
 end

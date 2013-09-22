@@ -16,14 +16,14 @@
     <%= f.text_field :name %>
 
     <%= f.label :course %><br>
-    <%= f.collection_select(:course, Course.all, :id, :name) %>
+    <%= f.select :course_id, Course.all.collect {|x| [x.name, x.id]}%>
 
     <%= f.label :side_types %><br>
     <%= f.collection_check_boxes(:side_types, SideType.all, :id, :name) do |b| %>
         <div><%= b.check_box %>&nbsp;<%= b.label %></div>
     <% end %>
     <%= f.label :category %><br>
-    <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+    <%= f.select :category_id, Category.all.collect {|x| [x.name, x.id]}%>
 
 
   </div>
